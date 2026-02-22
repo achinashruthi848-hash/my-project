@@ -1,0 +1,65 @@
+.form-card,
+.list-card {
+  margin-bottom: 2rem;
+}
+
+.form-card h2,
+.list-card h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.contacts-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contacts-list li div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contacts-list .phone {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.contacts-list .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.875rem;
+  display: block;
+  margin-top: 0.25rem;
+}
